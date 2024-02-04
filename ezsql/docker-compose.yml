@@ -1,0 +1,10 @@
+version: "2"
+services:
+  web:
+    build: .
+    image: ezsql
+    restart: always
+    ports:
+      - 8084:80
+    environment:
+      - GZCTF_FLAG=D0g3{This_is_flag}
